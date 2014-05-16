@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/bj">
+  <!-- padding 内边距   layout_margin 外边距
+  		android:layout_alignParentTop 布局的位置是否处于顶部 -->
+  <RelativeLayout 
+  	android:id="@+id/login_div1"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:padding="15dip"        
+  	android:layout_margin="15dip" 
+  	android:background="@drawable/background_login_div_bg"
+  	>
+  	<!-- 旧密码 -->
+  	<TextView 
+  		android:id="@+id/m_oldpwd1"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_alignParentTop="true"
+  		android:layout_marginTop="5dp"
+  		android:text="@string/m_oldpwd"
+  		style="@style/normalText"/>
+  	<EditText 
+  		android:id="@+id/m_oldpwd_edit1"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:hint="@string/login_username_hint"
+  		android:layout_below="@id/m_oldpwd1"
+  		android:singleLine="true"
+  		android:inputType="textPassword"/>
+  	<!--新密码 -->
+  	  <TextView 
+    	android:id="@+id/m_newpwd1"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/m_oldpwd_edit1"
+    	android:layout_marginTop="3dp"
+    	android:text="@string/m_newpwd"
+    	style="@style/normalText"/>
+    <EditText 
+    	android:id="@+id/m_newpwd_edit1"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/m_newpwd1"
+    	android:password="true"
+    	android:singleLine="true"
+    	android:inputType="textPassword"
+    />
+    <!-- 确认新密码 text -->
+    <TextView 
+    	android:id="@+id/m_r_newpwd1"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/m_newpwd_edit1"
+    	android:layout_marginTop="3dp"
+    	android:text="@string/m_r_newpwd"
+    	style="@style/normalText"/>
+    <EditText 
+    	android:id="@+id/m_r_newpwd_edit1"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/m_r_newpwd1"
+    	android:password="true"
+    	android:singleLine="true"
+    	android:inputType="textPassword"
+    />
+    <TextView 
+    	android:id="@+id/m_error1"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/m_r_newpwd_edit1"
+    	android:layout_alignLeft="@id/m_r_newpwd_edit1"
+    	android:layout_marginTop="3dp"
+    	android:text=""
+    	style="@style/normalText"/>
+      <!-- 重置button -->
+    <Button 
+    	android:id="@+id/m_reset_button1"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/m_r_newpwd_edit1"
+    	android:layout_alignRight="@id/m_r_newpwd_edit1"
+    	android:text="@string/m_reset_button"
+    	android:background="@drawable/blue_button"
+    />
+    <!-- 确定button -->
+    <Button 
+    	android:id="@+id/m_submit_button1"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/m_r_newpwd_edit1"
+    	 android:layout_toLeftOf="@id/m_reset_button1"
+	     android:layout_alignBottom="@id/m_reset_button1"
+    	android:text="@string/m_submit_button"
+    	android:background="@drawable/blue_button"
+    />
+  </RelativeLayout>
+ 
+</LinearLayout>

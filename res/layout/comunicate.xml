@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:background="@drawable/background_login">
+  <!-- padding 内边距   layout_margin 外边距
+  		android:layout_alignParentTop 布局的位置是否处于顶部 -->
+  <RelativeLayout 
+  	android:id="@+id/comuni_edit"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:padding="15dip"        
+  	android:layout_margin="15dip" 
+  	android:background="@drawable/background_login_div_bg"
+  	>
+  	<!-- ip -->
+  	<TextView 
+  		android:id="@+id/ip_view"
+  		android:layout_width="wrap_content"
+  		android:layout_height="wrap_content"
+  		android:layout_alignParentTop="true"
+  		android:layout_marginTop="5dp"
+  		android:text="服务器IP地址"
+  		android:textSize="17px"/>
+  	  	  	<LinearLayout
+android:layout_width="0dip"
+android:layout_height="0dip"
+android:focusable="true"
+android:focusableInTouchMode="true" />
+  	<EditText 
+  		android:id="@+id/ip_edit"
+  		android:layout_width="fill_parent"
+  		android:layout_height="wrap_content"
+  		android:layout_below="@id/ip_view"
+  		android:singleLine="true"/>
+  	<!-- port -->
+  	  <TextView 
+    	android:id="@+id/port_view"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/ip_edit"
+    	android:layout_marginTop="3dp"
+    	android:text="端口号"
+    	android:textSize="17px"/>
+    <EditText 
+    	android:id="@+id/port_edit"
+    	android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/port_view"
+    />
+    <TextView 
+    	android:id="@+id/m_error11"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/port_edit"
+    	android:layout_alignLeft="@id/port_edit"
+    	android:layout_marginTop="3dp"
+    	android:text=""
+    	style="@style/normalText"/>
+      <!-- 重置button -->
+    <Button 
+    	android:id="@+id/reset_button"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/port_edit"
+    	android:layout_alignRight="@id/port_edit"
+    	android:text="重置"
+    	android:background="@drawable/blue_button"
+    />
+    <!-- 确定button -->
+    <Button 
+    	android:id="@+id/add_button"
+    	android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/port_edit"
+    	 android:layout_toLeftOf="@id/reset_button"
+	     android:layout_alignBottom="@id/reset_button"
+    	android:text="添加"
+    	android:background="@drawable/blue_button"
+    />
+  </RelativeLayout>
+  <TextView 
+      android:id="@+id/list_title"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+      android:layout_marginLeft="15dp"
+      android:text="服务器地址列表"
+      android:textSize="20px"
+  />"
+  <ListView 
+      android:id="@+id/lv"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      
+      android:divider="#ffffff"
+      android:dividerHeight="1px">
+  </ListView>
+
+</LinearLayout>

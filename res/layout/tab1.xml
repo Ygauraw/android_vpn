@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bj"
+    android:orientation="vertical" >
+    <ImageView
+        android:id="@+id/logo_image" 
+        android:layout_width="1280dip" 
+        android:layout_height="200dip" 
+        android:layout_centerHorizontal="true" 
+        
+        android:src="@drawable/logohaiyi" 
+        > 
+    </ImageView> 
+    <RelativeLayout
+        android:layout_width="640dip"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/logo_image"
+        
+        android:id="@+id/login_field"
+        android:background="@drawable/you" >
+
+        <LinearLayout
+            android:id="@+id/tabcon"
+            style="@style/TabContainer" >
+
+            <LinearLayout
+                android:id="@+id/tab1"
+                android:layout_width="fill_parent"
+                style="@style/TabSelected"
+                 >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TabTxt"
+                    android:text=""
+                    android:textSize="22px" />
+            </LinearLayout>
+            
+
+                
+            <LinearLayout
+                android:id="@+id/tab2"
+                android:layout_width="fill_parent"
+                style="@style/TabUnselected"
+                 >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    style="@style/TabTxt"
+                    android:text=""
+                    android:textSize="22px" />
+            </LinearLayout>
+  
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/login_div"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tabcon"
+            android:layout_margin="10dip"
+            android:paddingBottom="15dip" >
+
+            <TextView
+                android:id="@+id/login_user_input"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="50dip"
+                android:text="证书名称"
+                android:textSize="20px"
+                android:textColor="#AAAAAA"
+                 />
+			
+            <EditText
+                android:id="@+id/username_edit1"
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_marginLeft="40dp"
+                
+                android:layout_toRightOf="@id/login_user_input"
+                android:background="#00000000"
+                android:textColor="#AAAAAA"
+                android:textSize="20px"
+                 />
+            <Button
+            android:id="@+id/select_keystore_button"
+            
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/username_edit1"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_edittext"
+            android:padding="5dp"
+            android:text="选择证书"
+            android:textColor="#AAAAAA"/>
+         
+			<LinearLayout
+android:layout_width="0dip"
+android:layout_height="0dip"
+android:focusable="true"
+android:focusableInTouchMode="true" />
+    
+
+            <TextView
+                android:id="@+id/login_server_select"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_user_input"
+                
+                android:layout_marginTop="35dip"
+                android:text="@string/login_label_serverselect"
+                android:textSize="20px"
+                android:textColor="#AAAAAA"
+                 />
+
+            <Spinner
+                android:id="@+id/Spinner01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/username_edit1"
+                android:layout_alignRight="@id/select_keystore_button"
+                android:layout_below="@id/username_edit1"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/bg_edittext">
+            </Spinner>
+            
+            <TextView 
+                android:id="@+id/error_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Spinner01"
+                android:layout_alignLeft="@id/Spinner01"
+                android:layout_marginTop="24dip"
+                android:text=""
+                android:textSize="20px"     
+                />
+            
+             
+   
+    		<Button 
+    			android:id="@+id/button_login1"
+    			android:layout_width="wrap_content"
+    			android:layout_height="wrap_content"
+    			android:layout_below="@id/error_login"
+    			android:layout_margin="15dip"
+                android:layout_alignRight="@id/Spinner01"
+    	 		
+    			android:text="登录"
+    			android:background="@drawable/blue_buttonnn"
+   	 		/>
+            <Button
+                android:id="@+id/button_comunicate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/comuni"
+                android:text="" />
+            <Button
+                android:id="@+id/button_modifypass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip"
+                android:layout_toRightOf="@id/button_comunicate"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/modifypa"
+                android:text="" />
+            <Button
+                android:id="@+id/button_deletecert"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dip"
+                android:layout_toRightOf="@id/button_modifypass"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/deletecer"
+                android:text="" />
+        </RelativeLayout>
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="640dip"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/login_field"
+        android:layout_alignTop="@id/login_field"
+        android:id="@+id/login_f"
+        android:background="@drawable/right" > 
+    </RelativeLayout>
+    
+
+</RelativeLayout>

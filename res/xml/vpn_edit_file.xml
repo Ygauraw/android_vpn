@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:settings="http://schemas.android.com/apk/res/com.android.settings" >
+
+    <EditTextPreference
+        android:dialogTitle="@string/vpn_name"
+        android:inputType="textCapSentences"
+        android:key="vpn_name"
+        android:singleLine="true"
+        android:title="@string/vpn_name" />
+    <EditTextPreference
+        android:inputType="textUri"
+        android:key="vpn_server_name"
+        android:summary="@string/vpn_vpn_server"
+        android:title="@string/vpn_vpn_server_title" />
+	<EditTextPreference
+        android:dialogTitle="@string/vpn_openvpn_port"
+        android:inputType="number"
+        android:key="set_port"
+        android:singleLine="true"
+        android:title="@string/vpn_openvpn_port" />
+
+    <ListPreference
+        android:dialogTitle="@string/vpn_openvpn_protocol"
+        android:entries="@array/vpn_openvpn_protocol_entries"
+        android:entryValues="@array/vpn_openvpn_protocol_entries"
+        android:key="set_protocol"
+        android:title="@string/vpn_openvpn_protocol" />
+	<com.haiyisoft.hvpn.FilePickPreference
+        android:dialogTitle="@string/vpn_ca_certificate"
+        android:key="vpn_cert"
+        android:summary="@string/vpn_ca_certificate_title"
+        android:title="@string/vpn_ca_certificate" />
+
+    <com.haiyisoft.hvpn.KeyChoosePreference
+        android:dialogTitle="@string/vpn_user_certificate"
+        android:key="vpn_user_cert"
+        android:summary="@string/vpn_user_certificate_title"
+        android:title="@string/vpn_user_certificate" />
+    
+</PreferenceScreen>

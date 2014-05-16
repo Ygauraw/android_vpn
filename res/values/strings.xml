@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <string name="app">HVPN</string>
+	<string name="broken_image_cert_title">Error showing certificate selection</string>
+    <string name="broken_image_cert">Got an exception trying to show the Android 4.0+ certificate selection dialog. This should never happen as this a standard feature of Android 4.0+. Maybe your Android ROM support for certificate storage is broken</string>
+    <!-- Menu option to Wi-Fi advanced settings -->
+    <string name="wifi_menu_advanced">高级设置</string>
+    <string name="vpn_settings_activity_title">HVPN</string>
+
+    <!-- Title of VPN connect dialog -->
+    <string name="vpn_connect_to">	连接<xliff:g id="name" example="Work Network">%s</xliff:g></string>
+    <!-- In VPN connect dialog, for inputing username and password -->
+    <string name="vpn_username_dialog_title">认证</string>
+    <string name="vpn_modify_pass_dialog_title">修改密码</string>
+    <string name="vpn_username_colon">用户名:</string>
+    <string name="vpn_oldpass_file_colon">旧密码:</string>
+    <string name="vpn_newpass_file_colon">新密码:</string>
+    <string name="vpn_confirm_newpass_file_colon">确认新密码:</string>
+    <string name="vpn_password_colon">密     码:</string>
+    <string name="vpn_a_username">a username</string>
+    <string name="vpn_a_password">a password</string>
+    <string name="location">地点</string>
+    <string name="cant_read_folder">不能读取目录</string>
+    <string name="file_explorer_tab">文件浏览器</string>
+
+    <!--
+In VPN connect dialog where user may check to remember the username
+entered
+-->
+    <string name="vpn_save_username">记住用户名</string>
+    <string name="vpn_connect_button">连接</string>
+    <string name="vpn_yes_button">是</string>
+    <string name="vpn_no_button">否</string>
+    <string name="vpn_back_button">Back</string>
+    <string name="vpn_mistake_button">否</string>
+    <string name="vpn_menu_done">保存</string>
+    <string name="vpn_menu_cancel">取消</string>
+    <string name="vpn_menu_revert">返回</string>
+    <string name="vpn_menu_connect">连接</string>
+    <string name="vpn_menu_disconnect">断开</string>
+    <string name="vpn_menu_edit">编辑</string>
+    <string name="vpn_menu_delete">删除</string>
+    <!-- add by chien -->
+	<string name="vpn_load_button">登录</string>
+	
+    <!-- VPN error dialog messages -->
+    <string name="vpn_error_miss_entering">	请输入<xliff:g id="code">%s</xliff:g>	.</string>
+    <string name="vpn_error_miss_entering_cert">	请选择<xliff:g id="code">%s</xliff:g>	.</string>
+    <string name="vpn_error_miss_selecting">	请选择<xliff:g id="option">%s</xliff:g>	.</string>
+    <string name="vpn_error_duplicate_name">	VPN名 \'<xliff:g id="name" example="Home Network">%s</xliff:g>	\' 已经存在，请重新填写.</string>
+    <string name="vpn_confirm_profile_deletion">您确定要删除此配置文件?</string>
+    <string name="vpn_confirm_add_profile_cancellation">您确定取消创建此配置文件?</string>
+    <string name="vpn_confirm_edit_profile_cancellation">您确定要放弃对此配置文件的修改?</string>
+    <string name="vpn_confirm_reconnect">无法连接到网络，需要重试吗?</string>
+    <string name="vpn_reconnect_from_lost">连接丢失，需要重连吗?</string>
+    <string name="vpn_unknown_server_dialog_msg">Server name cannot be resolved. Do you want to
+check your server name setting?</string>
+    <string name="vpn_challenge_error_dialog_msg">Challenge error. Do you want to check your secret
+setting?</string>
+    <string name="vpn_secret_not_set_dialog_msg">One or more secrets are missing in this VPN
+configuration. Do you want to check your secret setting?</string>
+    <string name="vpn__error_dialog_msg">The username or password you entered is incorrect.
+Do you want to try again?</string>
+    <string name="vpn_remote_hung_up_error_dialog_msg">Server hung up. The username or password you
+entered could be incorrect. Do you want to try again?</string>
+    <string name="vpn_remote_ppp_hung_up_error_dialog_msg">Server hung up. It is possible that you are behind
+a firewall that prevents you from connecting to the server. Do you
+want to try again?</string>
+    <string name="vpn_error">连接错误</string>
+
+    <!-- VPN type selection activity title -->
+    <string name="vpn_type_title">增加配置</string>
+    <string name="openvpn_installed_info">HVPN</string>
+    <!-- "Add VPN" preference title -->
+    <string name="vpn_add_new_vpn">增加配置</string>
+    <!-- "modify_password" preference title -->
+      <string name="modify_password">修改密码</string>
+    <!-- VPN profile editor title when adding a new profile -->
+    <string name="vpn_edit_title_add">增加配置</string>
+    <!-- VPN profile editor title when editing an existing profile -->
+    <string name="vpn_edit_title_edit">配置信息</string>
+    <!-- Preference group title for a list of VPN profiles -->
+    <string name="vpns">配置列表</string>
+    <!-- Preference summary text when VPN is connecting -->
+    <string name="vpn_preparing">正在连接\u2026</string>
+    <!-- Preference summary text when VPN is connecting -->
+    <string name="vpn_connecting">正在连接\u2026</string>
+    <!-- Preference summary text when VPN is disconnecting -->
+    <string name="vpn_disconnecting">正在断开\u2026</string>
+    <!-- Preference summary text when VPN is disconnecting -->
+    <string name="vpn_disconnected">已断开</string>
+    <!-- Preference summary text when VPN is connected -->
+    <string name="vpn_connected">已连接</string>
+    <!-- Preference summary text when VPN is unusable -->
+    <string name="vpn_unusable">不可用</string>
+    <!-- Preference summary text when VPN is not connected -->
+    <string name="vpn_connect_hint">连接到网络</string>
+
+    <!-- Name of a VPN profile -->
+    <string name="vpn_name">配置文件名</string>
+    <string name="vpn_a_name">配置文件名</string>
+
+    <!-- Toast message shown when a profile is added -->
+    <string name="vpn_profile_added">	\'<xliff:g id="name">%s</xliff:g>	\' 已成功添加</string>
+    <!-- Toast message shown when changes of a profile is saved -->
+    <string name="vpn_profile_replaced">	 \'<xliff:g id="name">%s</xliff:g>	\'已修改</string>
+
+    <!-- Preference title -->
+    <string name="vpn_user_certificate_title">设置用户证书</string>
+    <!-- Complete term -->
+    <string name="vpn_user_certificate">用户证书</string>
+    <string name="vpn_a_user_certificate">一个用户证书</string>
+
+    <!-- Preference title -->
+    <string name="vpn_ca_certificate_title">设置CA证书</string>
+    <!-- Complete term -->
+    <string name="vpn_ca_certificate">CA证书</string>
+    <string name="vpn_a_ca_certificate">一个CA证书</string>
+    <string name="vpn_openvpn_port">服务器端口</string>
+    <string name="vpn_openvpn_protocol">TCP/UDP</string>
+    <string name="vpn_openvpn_device">Device to use</string>
+    <string name="vpn_openvpn_userauth">用户认证</string>
+    <string name="vpn_openvpn_userauth_summary">使用账户密码认证</string>
+    <string name="vpn_openvpn_advanced_titlebar">高级设置</string>
+    <string name="vpn_openvpn_comp_lzo">LZO compression</string>
+    <string name="vpn_openvpn_comp_lzo_summary">Force LZO compression to be set to on</string>
+    <string name="vpn_openvpn_ns_cert_type">Set NS cert type</string>
+    <string name="vpn_openvpn_set_use_tls_auth">TLS-Auth</string>
+    <string name="vpn_openvpn_set_use_tls_auth_summary">Use a tls-auth key</string>
+    <string name="vpn_openvpn_set_tls_auth_key">TA key file location</string>
+    <string name="vpn_openvpn_set_tls_auth_key_summary"></string>
+    <string name="vpn_openvpn_set_tls_auth_key_direction">Tls-Auth key direction</string>
+    <string name="vpn_openvpn_redirect_gateway_title">Redirect gateway</string>
+    <string name="vpn_openvpn_redirect_gateway_summary">Force all traffic to be routed through the VPN
+tunnel</string>
+    <string name="vpn_openvpn_set_addr">Remote Sets Addresses</string>
+    <string name="vpn_openvpn_set_addr_summary">Uncheck to set tunnel addresses manually</string>
+    <string name="vpn_openvpn_set_local_addr">Local IP Address</string>
+    <string name="vpn_openvpn_set_remote_addr">Remote IP Address</string>
+    <string name="vpn_openvpn_set_cipher">Cipher algorithm</string>
+    <string name="vpn_openvpn_set_cipher_message">Leave empty to use default cipher</string>
+    <string name="vpn_openvpn_set_cipher_default">default</string>
+    <string name="vpn_openvpn_set_keysize">Size of cipher key</string>
+    <string name="vpn_openvpn_set_keysize_message">Leave empty to use cipher-specific default</string>
+    <string name="vpn_openvpn_set_keysize_default">default</string>
+    <string name="vpn_openvpn_set_extra">Extra arguments</string>
+    <string name="vpn_openvpn_set_extra_message">Enter the extra command line arguments, use space to split multiple options, use double quote to enclose option with space</string>
+
+    <!-- Preference title -->
+    <string name="vpn_vpn_server_title">远程服务器IP</string>
+    <!-- Complete term -->
+    <string name="vpn_vpn_server">VPN server</string>
+    <string name="vpn_a_vpn_server">服务器IP</string>
+    <!-- Dialog title for setting VPN server name -->
+    <string name="vpn_vpn_server_dialog_title">VPN server name</string>
+    <string name="vpn_vpn_cert_choose_title">Select certification file</string>
+    <string name="vpn_vpn_tls_key_choose_title">Select tls key file</string>
+
+    <!-- Preference title -->
+    <string name="vpn_dns_search_list_title">DNS search domains</string>
+    <!-- Complete term -->
+    <string name="vpn_dns_search_list">DNS search domains</string>
+
+    <!-- Summary text to hint that the value is set -->
+    <string name="vpn_field_is_set"><xliff:g id="value">%s</xliff:g>	is set</string>
+    <!-- Summary text to hint that the value is not set -->
+    <string name="vpn_field_not_set"><xliff:g id="value">%s</xliff:g>	not set</string>
+    <!-- Summary text to hint that the value is not set but it's not required -->
+    <string name="vpn_field_not_set_optional"><xliff:g id="value">%s</xliff:g>	not set (optional)</string>
+
+    <!-- CheckBoxPreference title to enable something -->
+    <string name="vpn_enable_field">	Enable<xliff:g id="option">%s</xliff:g></string>
+    <!-- CheckBoxPreference title to disable something -->
+    <string name="vpn_disable_field">	Disable<xliff:g id="option">%s</xliff:g></string>
+
+    <!-- CheckBoxPreference summary to hint that something is enabled -->
+    <string name="vpn_is_enabled"><xliff:g id="option">%s</xliff:g>	is enabled</string>
+    <!-- CheckBoxPreference summary to hint that something is disabled -->
+    <string name="vpn_is_disabled"><xliff:g id="option">%s</xliff:g>	is disabled</string>
+
+    <!-- Title of preference to enter the VPN settings activity -->
+    <string name="vpn_settings_title">HVPN设置</string>
+    <!-- Summary of preference to enter the VPN settings activity -->
+    <string name="vpn_settings_summary">Set up &amp; manage Virtual Private Networks (VPNs)</string>
+    <!-- A secret edit field's grayed out value when it has not been modified -->
+    <string name="vpn_secret_unchanged">(unchanged)</string>
+    <!-- A secret edit field's grayed out value when it has not been set -->
+    <string name="vpn_secret_not_set">(not set)</string>
+    <string name="openvpn_install_error_title">HVPN安装错误</string>
+    <string name="openvpn_installer_title">HVPN安装</string>
+    <string name="openvpn_installer_openvpn_not_found">无法找到HVPN可执行程序</string>
+    <string name="openvpn_installer_installing">正在安装HVPN...</string>
+    <string name="openvpn_installer_checking">检测 HVPN...</string>
+    <string name="openvpn_error_cert_file_error">Can\'t parse certification file</string>
+    <string name="openvpn_log_dialog_title">日志</string>
+    <string name="vpn_view_log">显示日志</string>
+<!-- login -->
+
+  <string name="hello">Hello World, LoginActivity!</string>
+    <string name="login_label_username">用户名</string>
+    <string name="login_label_password">密     码</string>
+    <string name="login_label_signin">登 录</string>
+    <string name="login_label_signout">退出</string>
+    <string name="login_status_logging_in">登录中...</string>
+    <string name="login_username_hint"></string>
+    <string name="login_register_link">没有帐号？ <a href="#">注册</a></string>
+    <string name="app_name">miniTwitter</string>
+    <string name="login_label_serverselect">服务器选择</string>
+    <string name="login_password_hint">请输入密码</string>
+    
+    <string name="home_tv">通讯设置</string>
+    <string name="style_tv">修改密码</string>
+    <string name="shopping_tv">删除证书</string>
+    <string name="show_tv">证书恢复</string>
+    
+ <!-- modify password --> 
+ <string name="m_submit_button">确定</string>
+ <string name="m_reset_button">重置</string>
+ <string name="m_r_newpwd">确认新密码</string>  
+ <string name="m_newpwd">新密码</string>
+ <string name="m_oldpwd">旧密码</string>
+ <string name="m_error"></string>
+</resources>

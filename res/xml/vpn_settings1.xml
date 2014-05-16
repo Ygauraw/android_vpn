@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+     
+	android:background="@drawable/background_login">
+    <PreferenceScreen
+        android:key="add_new_vpn2"
+        android:title="@string/vpn_add_new_vpn" />
+    <PreferenceCategory
+        android:key="vpn_list2"
+        android:title="@string/vpns" >
+    </PreferenceCategory>
+
+</PreferenceScreen>
+

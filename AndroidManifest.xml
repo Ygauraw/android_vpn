@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.haiyisoft.hvpn"
+    android:installLocation="preferExternal" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+	<!-- create and delete permission -->
+        <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+ 
+    <!-- write permission -->
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> 
+ <uses-permission android:name="android.permission.BIND_VPN_SERVICE"/> 
+    <uses-sdk android:minSdkVersion="15" />
+
+    <application
+        android:name="App"
+        android:icon="@drawable/openvpn_icon2"
+        android:label="@string/app"
+         >
+        
+        <activity android:name="com.haiyisoft.hvpn.Container"
+                  android:screenOrientation="landscape"
+                  android:configChanges="orientation|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+  
+        <activity android:name="com.haiyisoft.hvpn.Tab1Activity"
+            android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name="com.haiyisoft.hvpn.Tab2Activity"
+            android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name="com.haiyisoft.hvpn.ComuniActivity"
+            android:configChanges="orientation|keyboardHidden"></activity>
+        <activity
+            android:name=".VpnSettingsFile1"
+            android:configChanges="orientation|keyboardHidden">
+            
+        </activity>
+         <activity
+            android:name=".VpnSettings1"
+            android:configChanges="orientation|keyboardHidden">
+            
+        </activity>
+           <activity
+            android:name=".ModifyPassword"
+            android:configChanges="orientation|keyboardHidden" >
+           
+        </activity>
+         <activity
+            android:name=".ModifyPasswordFile1"
+            android:configChanges="orientation|keyboardHidden" >
+           
+        </activity>
+        <activity
+            android:name=".FileSelect">
+            
+        </activity>
+           
+        <activity 
+            android:name=".VpnEditorFile"
+            android:configChanges="orientation|keyboardHidden">
+            
+        </activity>
+        <activity
+            android:name=".VpnEditor"
+            android:configChanges="orientation|keyboardHidden" />
+ 		
+        <service
+            android:name=".OpenVpnService"
+            android:permission="android.permission.BIND_VPN_SERVICE" >
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+        <service 
+            android:name=".OpenVpnServiceFile"
+            android:permission="android.permission.BIND_VPN_SERVICE" >
+            <intent-filter>
+                <action android:name="android.net.VpnService" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
